@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/abril-ia",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
