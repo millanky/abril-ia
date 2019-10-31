@@ -1,0 +1,32 @@
+<div class='usuarioDesconocido'>
+
+</div>
+
+<div class='usuarioLogado'>
+  <div id="content" class="col-lg-10 offset-1">
+
+    <header id="header" class="col-lg-12"> <!--</header> [style.background]="header_color">-->
+      <h1>
+        {{title}}
+      </h1>
+    </header>
+
+    <nav id="nav" class="col-lg-12">
+      <ul>
+        <li><a [routerLink]="['/energia']" [routerLinkActive]="['activado']">Energía</a></li>
+        <li><a [routerLink]="['/inteligencia']" [routerLinkActive]="['activado']">Inteligencia</a></li>
+        <li><a [routerLink]="['/pacientes']" [routerLinkActive]="['activado']">Pacientes</a></li>
+        <li><a [routerLink]="['/seguridad']" [routerLinkActive]="['activado']">Seguridad</a></li>
+      </ul>
+    </nav>
+
+    <section id="main" class="col-lg-12">
+      <!--Componente actual-->
+      <router-outlet></router-outlet>
+    </section>
+
+    <footer class="col-lg-12">
+      <p>Curso de Angular - victorroblesweb.s</p>
+    </footer>
+  </div>
+</div>
